@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,15 +11,15 @@ const Header = () => {
         <span className="ml-3 text-xl">My Investory</span>
       </a>
       <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a href="http://localhost:3000/" className="mr-8 hover:text-gray-400">
+        <Link className="mr-8 hover:text-gray-400" to={`/`}>
           ホーム
-        </a>
-        <a href="http://localhost:3000/" className="mr-8 hover:text-gray-400">
+        </Link>
+        <Link className="mr-8 hover:text-gray-400" to={`/register`}>
           新規登録
-        </a>
-        <a href="http://localhost:3000/" className="mr-8 hover:text-gray-400">
+        </Link>
+        <Link className="mr-8 hover:text-gray-400" to={`/login`}>
           ログイン
-        </a>
+        </Link>
       </nav>
     </div>
   );
